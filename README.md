@@ -8,31 +8,49 @@
 skills/
   README.md
   index.json
-  tapd-login/
-    SKILL.md
   tapd-story-create/
     SKILL.md
+    references/
+      setup.md
+      auth.md
+      init.md
   tapd-story-pull/
     SKILL.md
+    references/
+      setup.md
+      auth.md
+      init.md
   tapd-story-sync/
     SKILL.md
+    references/
+      setup.md
+      auth.md
+      init.md
   tapd-story-tasks-analysis/
     SKILL.md
     references/
+      setup.md
+      auth.md
+      init.md
       analysis-output.md
   tapd-iteration-analysis/
     SKILL.md
     references/
+      setup.md
+      auth.md
+      init.md
       analysis-output.md
   tapd-iteration-stories-analysis/
     SKILL.md
     references/
+      setup.md
+      auth.md
+      init.md
       analysis-output.md
 ```
 
 ## 已包含的 skills
 
-- `tapd-login`：登录 TAPD CLI，或清理本地认证信息
 - `tapd-story-create`：从本地 Markdown 创建 TAPD 需求
 - `tapd-story-pull`：把 TAPD 需求拉取到本地 Markdown
 - `tapd-story-sync`：将本地 Markdown 需求同步回 TAPD
@@ -43,6 +61,14 @@ skills/
 ## 输出规范
 
 分析类 skill 各自内置 `references/analysis-output.md`，安装单个 skill 时也能正常工作。
+
+## 通用前置说明
+
+所有 TAPD skill 统一内置三类前置文档：
+
+- `references/setup.md`：引导安装全局 TAPD CLI
+- `references/auth.md`：引导完成 TAPD 认证
+- `references/init.md`：引导配置默认空间和创建者
 
 ## 安装约定
 

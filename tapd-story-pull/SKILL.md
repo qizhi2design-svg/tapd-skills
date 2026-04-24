@@ -14,20 +14,32 @@ description: 当用户希望通过 tapd CLI 将 TAPD 需求拉取到本地 Markd
 
 ## 执行步骤
 
-1. 获取 TAPD 需求 ID。
-2. 执行：
+1. 先执行：
+
+```bash
+tapd info
+```
+
+2. 如果 `tapd info` 命令无法执行，读取：
+   - `references/setup.md`
+3. 如果 `tapd info` 显示未授权，读取：
+   - `references/auth.md`
+4. 如果 `tapd info` 显示已授权但当前空间或默认创建人未设置，读取：
+   - `references/init.md`
+5. 获取 TAPD 需求 ID。
+6. 执行：
 
 ```bash
 tapd story pull <story-id>
 ```
 
-3. 如果用户希望输出到指定路径，执行：
+7. 如果用户希望输出到指定路径，执行：
 
 ```bash
 tapd story pull <story-id> <output-file>
 ```
 
-4. 验证：
+8. 验证：
    - Markdown 文件已生成
    - 图片已下载到 `assets/` 目录
 

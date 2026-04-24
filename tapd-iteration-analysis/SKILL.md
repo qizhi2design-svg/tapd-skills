@@ -15,19 +15,31 @@ description: 当用户希望分析某个 TAPD 迭代的整体推进情况，包�
 
 ## 执行步骤
 
-1. 获取迭代 ID：
+1. 先执行：
+
+```bash
+tapd info
+```
+
+2. 如果 `tapd info` 命令无法执行，读取：
+   - `references/setup.md`
+3. 如果 `tapd info` 显示未授权，读取：
+   - `references/auth.md`
+4. 如果 `tapd info` 显示已授权但当前空间未设置，读取：
+   - `references/init.md`
+5. 获取迭代 ID：
    - 用户明确提供时直接使用
    - 用户没有提供时，可先执行 `tapd iteration list` 辅助确认
-2. 执行：
+6. 执行：
 
 ```bash
 tapd iteration get <iteration-id>
 tapd iteration tasks <iteration-id> --all
 ```
 
-3. 读取：
+7. 读取：
    - `references/analysis-output.md`
-4. 按规范输出：
+8. 按规范输出：
    - 分析对象
    - 总览
    - 关键汇总

@@ -1,10 +1,6 @@
 {
   "skills": [
     {
-      "name": "tapd-login",
-      "path": "tapd-login"
-    },
-    {
       "name": "tapd-story-create",
       "path": "tapd-story-create"
     },

@@ -15,16 +15,28 @@ description: 当用户希望通过 tapd CLI 从本地 Markdown 文件创建新�
 
 ## 执行步骤
 
-1. 读取目标 Markdown 文件。
-2. 确认这是新需求：
+1. 先执行：
+
+```bash
+tapd info
+```
+
+2. 如果 `tapd info` 命令无法执行，读取：
+   - `references/setup.md`
+3. 如果 `tapd info` 显示未授权，读取：
+   - `references/auth.md`
+4. 如果 `tapd info` 显示已授权但当前空间或默认创建人未设置，读取：
+   - `references/init.md`
+5. 读取目标 Markdown 文件。
+6. 确认这是新需求：
    - frontmatter 中没有 `tapd_id`
-3. 执行：
+7. 执行：
 
 ```bash
 tapd story create <markdown-file>
 ```
 
-4. 验证：
+8. 验证：
    - 命令执行成功
    - `tapd_id` 已写回文件
 
