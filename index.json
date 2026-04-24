@@ -15,6 +15,18 @@
     {
       "name": "tapd-story-sync",
       "path": "tapd-story-sync"
+    },
+    {
+      "name": "tapd-story-tasks-analysis",
+      "path": "tapd-story-tasks-analysis"
+    },
+    {
+      "name": "tapd-iteration-analysis",
+      "path": "tapd-iteration-analysis"
+    },
+    {
+      "name": "tapd-iteration-stories-analysis",
+      "path": "tapd-iteration-stories-analysis"
     }
   ]
 }

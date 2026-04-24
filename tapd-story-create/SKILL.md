@@ -1,34 +1,34 @@
 ---
 name: tapd-story-create
-description: Use when the user wants to create a new TAPD story from a local Markdown file with the tapd CLI.
+description: 当用户希望通过 tapd CLI 从本地 Markdown 文件创建新的 TAPD 需求时使用。
 ---
 
-# TAPD Story Create
+# TAPD 需求创建
 
-Create a TAPD story from a local Markdown file.
+从本地 Markdown 文件创建 TAPD 需求。
 
-## When to use
+## 使用场景
 
-- The user asks to create a TAPD story
-- The user wants to upload a new Markdown requirement to TAPD
-- The Markdown file does not yet have `tapd_id`
+- 用户要求创建 TAPD 需求
+- 用户希望把新的 Markdown 需求上传到 TAPD
+- Markdown 文件里还没有 `tapd_id`
 
-## Steps
+## 执行步骤
 
-1. Read the target Markdown file.
-2. Confirm it is a new story:
-   - no `tapd_id` in frontmatter
-3. Run:
+1. 读取目标 Markdown 文件。
+2. 确认这是新需求：
+   - frontmatter 中没有 `tapd_id`
+3. 执行：
 
 ```bash
 tapd story create <markdown-file>
 ```
 
-4. Verify:
-   - the command succeeds
-   - `tapd_id` is written back to the file
+4. 验证：
+   - 命令执行成功
+   - `tapd_id` 已写回文件
 
-## Notes
+## 注意事项
 
-- The CLI supports local images and Mermaid upload
-- Missing `iteration_id` or `creator` may trigger interactive selection
+- CLI 支持本地图片和 Mermaid 自动上传
+- 缺少 `iteration_id` 或 `creator` 时可能会触发交互选择
