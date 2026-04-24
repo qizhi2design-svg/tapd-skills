@@ -1,0 +1,20 @@
+{
+  "skills": [
+    {
+      "name": "tapd-login",
+      "path": "tapd-login"
+    },
+    {
+      "name": "tapd-story-create",
+      "path": "tapd-story-create"
+    },
+    {
+      "name": "tapd-story-pull",
+      "path": "tapd-story-pull"
+    },
+    {
+      "name": "tapd-story-sync",
+      "path": "tapd-story-sync"
+    }
+  ]
+}
