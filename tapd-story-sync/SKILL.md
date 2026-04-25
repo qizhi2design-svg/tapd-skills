@@ -13,6 +13,14 @@ description: 当用户希望通过 tapd CLI 将本地 Markdown 需求同步回 T
 - Markdown 文件里已经有 `tapd_id`
 - 目标是让 TAPD 和本地 Markdown 保持一致
 
+## 交互命令提示
+
+- 如果识别为交互命令场景，或不确定参数、子命令、输入方式，先执行对应帮助命令
+- 根命令可用 `tapd -h`
+- 子命令也支持 `-h`，例如：
+  - `tapd story -h`
+  - `tapd story update -h`
+
 ## 执行步骤
 
 1. 先执行：

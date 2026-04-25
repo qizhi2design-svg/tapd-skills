@@ -13,6 +13,14 @@ description: 当用户希望通过 tapd CLI 从本地 Markdown 文件创建新�
 - 用户希望把新的 Markdown 需求上传到 TAPD
 - Markdown 文件里还没有 `tapd_id`
 
+## 交互命令提示
+
+- 如果识别为交互命令场景，或不确定参数、子命令、输入方式，先执行对应帮助命令
+- 根命令可用 `tapd -h`
+- 子命令也支持 `-h`，例如：
+  - `tapd story -h`
+  - `tapd story create -h`
+
 ## 执行步骤
 
 1. 先执行：

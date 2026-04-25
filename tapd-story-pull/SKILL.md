@@ -12,6 +12,14 @@ description: 当用户希望通过 tapd CLI 将 TAPD 需求拉取到本地 Markd
 - 用户提供了 TAPD 需求 ID
 - 用户要求拉取、下载或同步 TAPD 需求到本地
 
+## 交互命令提示
+
+- 如果识别为交互命令场景，或不确定参数、子命令、输入方式，先执行对应帮助命令
+- 根命令可用 `tapd -h`
+- 子命令也支持 `-h`，例如：
+  - `tapd story -h`
+  - `tapd story pull -h`
+
 ## 执行步骤
 
 1. 先执行：
